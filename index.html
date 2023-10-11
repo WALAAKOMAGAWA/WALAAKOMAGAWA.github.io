@@ -1,0 +1,82 @@
+<head>
+    <meta charset="utf-8">
+    <title>The Bar</title>
+    <style>
+     
+    </style>
+</head>
+<h3><img src="Beige_and_Brown_Retro_Illustration_Donut_Logo-removebg-preview.png" alt="DONUT" width="250" height="250"></h3>
+<style>
+    body {
+        background-color: rgb(245, 245, 245);
+        margin: 0 15%;
+        font-family: sans-serif;
+    }
+    h1 {
+    color: rgb(48, 48, 48);
+    font-size: medium;
+}
+h2 {
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgba(189, 113, 27, 0.548);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-top: 30px;
+}
+h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+</style>
+
+<h2>BABY BITES & SMOOTIES</h2>
+
+<h1>Our Vision</h1>
+<p>Through a shared commitment to excellence, we are dedicated to the uncompromising quality of our food, service, people and profit, while taking exceptional care of our guests and staff.</p>
+<h1>Our Mission</h1>
+<p>To create an environment where absolute guest satisfaction is our highest priority.</p>
+
+<h2>Our Menu</h2>
+
+<h1>Donuts</h1>
+
+    
+    <h1><input type="checkbox" onclick="AddCheckedProducts()" id="wonder-book" name="wonder_book" value="40.00">Glazed Donuts, ₱40.00</h1>
+
+    <h1><input type="checkbox" onclick="AddCheckedProducts()" id="aso" name="aso" value="30.00">Cinnamon Twist, ₱30.00</h1>
+
+    <h1><input type="checkbox" onclick="AddCheckedProducts()" id="cat" name="cat" value="20.00">Bavarian, ₱20.00</h1>
+
+<h1>Smoothies</h1>
+
+    <h1><input type="checkbox" onclick="AddCheckedProducts()" id="dog" name="dog" value="80.00">Strawberry Coconut Smoothie, ₱80.00</h1>
+    
+    <p style="margin-top:.25em; margin-bottom:.25em;">Total: ₱<span id="current-total-amount"></span></p>
+
+    <a href="https:pornhub.com/">
+        <button>Check Out</button>
+      </a>
+
+    </form>
+    
+    <script type="text/javascript">
+    
+    var CSC_total_spot2 = "current-total-amount";
+    
+    var CSC_checkbox_IDs2 = new Array( "wonder-book","aso","cat","dog" );
+    
+    function AddCheckedProducts()
+    {
+       var value = 0.0;
+       for( var i=0; i<CSC_checkbox_IDs2.length; i++ )
+       {
+          var d = document.getElementById(CSC_checkbox_IDs2[i]);
+          if( d.checked ) { value += parseFloat(d.value); }
+       }
+       document.getElementById(CSC_total_spot2).innerHTML = value.toFixed(2);
+    }
+    AddCheckedProducts();
+    </script>
